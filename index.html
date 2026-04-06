@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmileCare - Premium Dental Clinic</title>
+    <meta name="description" content="Professional dental clinic website with top-tier experts.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container navbar">
+            <a href="#" class="logo">
+                <img src="assets/dental_logo.png" alt="Dental Clinic Logo">
+                <span>SmileCare</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Background Carousel -->
+        <div class="hero-carousel">
+            <div class="carousel-slide active" style="background-image: url('assets/hero_banner.png');"></div>
+            <div class="carousel-slide" style="background-image: url('assets/banner_2.png');"></div>
+            <div class="carousel-slide" style="background-image: url('assets/banner_3.png');"></div>
+            <div class="carousel-slide" style="background-image: url('assets/banner_4.png');"></div>
+        </div>
+
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Modern Dental Clinic</span>
+                <h1 class="hero-title">Experience the Best <span class="highlight">Dental Care</span> for Your Family
+                </h1>
+                <p class="hero-description">
+                    We provide top-quality dental care in a relaxed, state-of-the-art environment. Your brilliant,
+                    healthy smile is our highest priority!
+                </p>
+                <div class="hero-buttons">
+                    <a href="#appointment" class="btn btn-primary btn-large">Book an Appointment</a>
+                    <a href="#about" class="btn btn-outline-white btn-large">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="about" class="team section">
+        <div class="container">
+            <div class="section-heading-center">
+                <h4 class="section-subtitle">Our Experts</h4>
+                <h2 class="section-title">Meet Our Dedicated Team</h2>
+                <p class="section-description">We are a team of highly qualified and experienced dental professionals
+                    committed to providing the best care for you and your family.</p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-member js-open-modal" data-name="Dr. Sarah Smith" data-role="Lead Dental Surgeon"
+                    data-desc="Dr. Sarah has over 15 years of experience in complex dental surgeries and cosmetic dentistry. She is dedicated to bringing out the perfect smiles in all her patients using advanced technology. She completed her DDS from the prestigious University of Dental Medicine and is a board-certified surgeon."
+                    data-image="assets/hero_dentist.png">
+                    <div class="team-image">
+                        <img src="assets/hero_dentist.png" alt="Dr. Sarah Smith">
+                    </div>
+                    <div class="team-info">
+                        <h3>Dr. Sarah Smith</h3>
+                        <p class="team-role">Lead Dental Surgeon</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-member js-open-modal" data-name="Dr. Robert Johnson" data-role="Senior Prosthodontist"
+                    data-desc="Dr. Robert specializes in restoring and replacing teeth, making beautiful custom crowns, bridges, and dentures. With over 20 years in the field, he brings a gentle touch and uncompromised precision to every patient's restorative journey."
+                    data-image="assets/doctor_2.png">
+                    <div class="team-image">
+                        <img src="assets/doctor_2.png" alt="Dr. Robert Johnson">
+                    </div>
+                    <div class="team-info">
+                        <h3>Dr. Robert Johnson</h3>
+                        <p class="team-role">Senior Prosthodontist</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-member js-open-modal" data-name="Dr. Emily Chen" data-role="Orthodontic Specialist"
+                    data-desc="Dr. Emily is our resident expert on braces, aligners, and bite correction. She is incredibly passionate about working with both teenagers and adults to perfectly align their smiles, utilizing the latest in clear aligner technology."
+                    data-image="assets/doctor_3.png">
+                    <div class="team-image">
+                        <img src="assets/doctor_3.png" alt="Dr. Emily Chen">
+                    </div>
+                    <div class="team-info">
+                        <h3>Dr. Emily Chen</h3>
+                        <p class="team-role">Orthodontic Specialist</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="team-member js-open-modal" data-name="Dr. Michael Davis" data-role="General Dentist"
+                    data-desc="Dr. Michael handles everything from deep cleanings and cavity fillings to root canals. Known for his exceptionally friendly bedside manner, he ensures every patient, especially those with dental anxiety, feels perfectly at ease."
+                    data-image="assets/doctor_4.png">
+                    <div class="team-image">
+                        <img src="assets/doctor_4.png" alt="Dr. Michael Davis">
+                    </div>
+                    <div class="team-info">
+                        <h3>Dr. Michael Davis</h3>
+                        <p class="team-role">General Dentist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section bg-light">
+        <div class="container">
+            <div class="section-heading-center">
+                <h4 class="section-subtitle">Our Services</h4>
+                <h2 class="section-title">Comprehensive Dental Services</h2>
+                <p class="section-description">We offer a wide range of top-notch dental services to meet all your
+                    family's needs under one roof.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/service_whitening.png" alt="Teeth Whitening">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-tooth"></i></div>
+                        <h3 class="service-title">Teeth Whitening</h3>
+                        <p class="service-text">Achieve a brighter, more confident smile with our professional, safe,
+                            and effective whitening treatments.</p>
+                        <a href="#appointment" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/service_implants.png" alt="Dental Implants">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-teeth"></i></div>
+                        <h3 class="service-title">Dental Implants</h3>
+                        <p class="service-text">Restore your smile and bite functionality seamlessly with our premium,
+                            long-lasting dental implants.</p>
+                        <a href="#appointment" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/service_whitening.png" alt="General Checkups">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-stethoscope"></i></div>
+                        <h3 class="service-title">General Checkups</h3>
+                        <p class="service-text">Routine checkups to maintain optimal oral health, prevent cavities, and
+                            treat issues early on.</p>
+                        <a href="#appointment" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+        <div class="container">
+            <div class="section-heading-center">
+                <h4 class="section-subtitle">Testimonials</h4>
+                <h2 class="section-title">What Our Patients Say</h2>
+                <p class="section-description">Real stories from our happy patients who have experienced exceptional
+                    dental care at SmileCare.</p>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testimonial-text">"The best dental experience I've ever had! The staff is incredibly
+                        friendly and the doctors are meticulous and gentle. Highly recommend SmileCare!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user-circle"></i></div>
+                        <div>
+                            <h4>Amanda Williams</h4>
+                            <p>Teeth Whitening Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testimonial-text">"I was always nervous about visiting the dentist, but Dr. Smith made me
+                        feel completely at ease. My new implants changed my life!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user-circle"></i></div>
+                        <div>
+                            <h4>Mark Robinson</h4>
+                            <p>Dental Implants</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"Such a modern and clean clinic. My kids actually look forward to their
+                        routine checkups now because the team is so welcoming."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user-circle"></i></div>
+                        <div>
+                            <h4>Jessica Taylor</h4>
+                            <p>General Checkup</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="appointment section">
+        <div class="container appointment-container">
+            <div class="appointment-content">
+                <h4 class="section-subtitle text-white">Book Now</h4>
+                <h2 class="section-title text-white">Request an Appointment</h2>
+                <p class="appointment-desc text-white">
+                    Need to see a dentist? Fill out the form, and our reception team will contact you swiftly to confirm
+                    your preferred slot.
+                </p>
+                <div class="contact-info-list mb-4">
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i> <span>123 Dental Avenue, NY 10001</span>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i> <span>contact@smilecare.com</span>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone-alt"></i> <span>+1 (800) 123-4567</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="appointment-form-wrapper">
+                <form id="appointment-form" class="appointment-form" novalidate>
+                    <h3>Fill The Form</h3>
+
+                    <div class="form-group row">
+                        <div class="form-control-wrapper half">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe">
+                            <span class="error-msg" id="name-error"></span>
+                        </div>
+                        <div class="form-control-wrapper half">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com">
+                            <span class="error-msg" id="email-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="form-control-wrapper half">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 123-456-7890">
+                            <span class="error-msg" id="phone-error"></span>
+                        </div>
+                        <div class="form-control-wrapper half">
+                            <label for="service">Select Service *</label>
+                            <select id="service" name="service">
+                                <option value="" disabled selected>Choose a Service</option>
+                                <option value="checkup">General Checkup</option>
+                                <option value="whitening">Teeth Whitening</option>
+                                <option value="implants">Dental Implants</option>
+                                <option value="braces">Braces & Aligners</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-msg" id="service-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="form-control-wrapper half">
+                            <label for="date">Date *</label>
+                            <input type="date" id="date" name="date">
+                            <span class="error-msg" id="date-error"></span>
+                        </div>
+                        <div class="form-control-wrapper half">
+                            <label for="time">Time *</label>
+                            <input type="time" id="time" name="time">
+                            <span class="error-msg" id="time-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-control-wrapper">
+                            <label for="doctor">Preferred Doctor *</label>
+                            <select id="doctor" name="doctor">
+                                <option value="" disabled selected>Choose a Doctor</option>
+                                <option value="any">Any Available Doctor</option>
+                                <option value="dr-sarah">Dr. Sarah Smith</option>
+                                <option value="dr-robert">Dr. Robert Johnson</option>
+                                <option value="dr-emily">Dr. Emily Chen</option>
+                                <option value="dr-michael">Dr. Michael Davis</option>
+
+                            </select>
+                            <span class="error-msg" id="doctor-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-control-wrapper">
+                            <label for="message">Message (Optional)</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="How can we help you?"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Confirm
+                            Appointment</button>
+                    </div>
+
+                    <div id="form-success" class="form-success hidden">
+                        <i class="fas fa-check-circle"></i> Appointment request sent successfully! We will contact you
+                        soon.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="#" class="logo footer-logo">
+                    <img src="assets/dental_logo.png" alt="Dental Clinic Logo">
+                    <span>SmileCare</span>
+                </a>
+                <p class="footer-text">
+                    Committed to delivering the highest quality dental care using state-of-the-art procedures and
+                    advanced technology.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#appointment">Book Appointment</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Working Hours</h4>
+                <ul class="hours-list">
+                    <li><span>Monday - Friday</span> <span>08:00 AM - 08:00 PM</span></li>
+                    <li><span>Saturday</span> <span>09:00 AM - 05:00 PM</span></li>
+                    <li><span>Sunday</span> <span class="closed">Closed</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 SmileCare Dental Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Doctor Info Modal -->
+    <div id="doctor-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image-wrapper">
+                    <img id="modal-img" src="" alt="Doctor Image">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-name">Name</h2>
+                    <h4 id="modal-role">Role</h4>
+                    <p id="modal-desc">Description</p>
+                    <a href="#appointment" class="btn btn-primary mt-4 close-modal-btn" id="modal-book-btn">Book with
+                        this Doctor</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
